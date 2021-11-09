@@ -3,18 +3,22 @@
 import os
 
 class Directory:
-	#def __init__(self):
-		#self.directory = directory
-		#self.parent_dir = parent_dir
+	def __init__(self, directory, parent_dir):
+		self.directory = directory
+		self.parent_dir = parent_dir
 		#self.path = os.path.join(self.parent_dir, self.directory)
 
-	def createDir(self, directory, parent_dir):
-		self.directory = directory
-		self.parent_dir = parent_dir 
+	def createDir(self):
+		#directory = self.directory	
+		#self.parent_dir = parent_dir 
 		self.path = os.path.join(self.parent_dir, self.directory)
-		os.mkdir(self.path)
-		# logging
-		print("directory '%s' created" %directory)
+		try:
+			os.mkdir(self.path)
+			print("directory '%s' created" %self.directory)
+		except OSError as error:
+			print(error)
+		# loggin %self.directoryg
+		#print("directory '%s' created" %self.directory)
 
 #testing
 

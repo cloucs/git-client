@@ -2,10 +2,18 @@ import sys
 from PyQt5.QtWidgets import QApplication
 from classes.tformat import TFormat
 from classes.app import App
+from classes.git import Git
+
+# TODO: remove print() commands
 
 if __name__ == "__main__":
 	qApp = QApplication(sys.argv)
 	app = App()
+	#git = Git(app.createDirectoryDialog())
+	git = Git(app.openDirectoryDialog())
+	#git.init()
+	git.stageAll()
+	#git.commit()
 	#sys.exit(qApp.exec_())
 
 	# logs end of execution

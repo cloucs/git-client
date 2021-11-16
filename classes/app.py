@@ -1,8 +1,5 @@
-import os
-from sys import platform
 from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog, QPushButton, QMainWindow, QAction, QMenu
-from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import QWidget, QFileDialog
 from classes.tformat import TFormat
 from classes.git import Git
 

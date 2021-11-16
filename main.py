@@ -2,7 +2,6 @@ import sys
 from PyQt5.QtWidgets import QApplication
 from classes.tformat import TFormat
 from classes.app import App
-from classes.git import Git
 
 #TODO: finish git.stageSelected()
 #TODO: output to ui

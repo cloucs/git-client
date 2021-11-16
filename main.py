@@ -9,12 +9,14 @@ from classes.git import Git
 if __name__ == "__main__":
 	qApp = QApplication(sys.argv)
 	app = App()
+	#app.openFileDialog()
 	#git = Git(app.createDirectoryDialog())
-	git = Git(app.openDirectoryDialog())
+	#git = Git(app.openDirectoryDialog())
+	#git = Git()
 	#git.init()
-	git.stageAll()
+	#git.stageAll()
 	#git.commit()
-	#sys.exit(qApp.exec_())
+	sys.exit(qApp.exec_())
 
 	# logs end of execution
 	t = TFormat()

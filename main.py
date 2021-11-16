@@ -4,18 +4,12 @@ from classes.tformat import TFormat
 from classes.app import App
 from classes.git import Git
 
-# TODO: remove print() commands
+#TODO: finish git.stageSelected()
+#TODO: output to ui
 
 if __name__ == "__main__":
 	qApp = QApplication(sys.argv)
 	app = App()
-	#app.openFileDialog()
-	#git = Git(app.createDirectoryDialog())
-	#git = Git(app.openDirectoryDialog())
-	#git = Git()
-	#git.init()
-	#git.stageAll()
-	#git.commit()
 	sys.exit(qApp.exec_())
 
 	# logs end of execution
